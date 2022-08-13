@@ -53,10 +53,70 @@
             >
           </li>
         </ul>
+        <button class="burger-btn mobile-btn" type="button" data-mobile-menu-open>
+          <svg class="burger-btn__icon mobile-icon" width="40" height="40">
+            <use href="./images/sprite.svg#open-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu is-hidden" data-mobile-menu>
+          <button class="mobile-menu__btn mobile-btn" type="button" data-mobile-menu-close>
+            <svg class="mobile-menu__icon mobile-icon" width="40" height="40">
+              <use href="./images/sprite.svg#close-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__inner">
+            <ul class="list mobile-nav">
+              <li class="mobile-nav__item">
+                <a class="link mobile-nav__link mobile-nav__link-current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="link mobile-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="link mobile-nav__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <ul class="list mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a
+                  class="link mobile-contacts__link mobile-contacts__phone"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="link mobile-contacts__link mobile-contacts__mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list mobile-socials">
+              <li class="mobile-socials__item">
+                <a href="#" class="link mobile-socials__link">Instagram</a>
+              </li>
+              <li class="mobile-socials__icon">|</li>
+              <li class="mobile-socials__item">
+                <a href="#" class="link mobile-socials__link">Twitter</a>
+              </li>
+              <li class="mobile-socials__icon">|</li>
+              <li class="mobile-socials__item">
+                <a href="#" class="link mobile-socials__link">Facebook</a>
+              </li>
+              <li class="mobile-socials__icon">|</li>
+              <li class="mobile-socials__item">
+                <a href="#" class="link mobile-socials__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main class="main">
+    <!-- <main class="main">
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -64,9 +124,9 @@
         </div>
       </section>
       <section class="section-qualities section">
-        <div class="container">
-          <!--Заголовок скрыть-->
-          <h2 class="title visually-hidden">Наши особенности</h2>
+        <div class="container"> -->
+    <!--Заголовок скрыть-->
+    <!-- <h2 class="title visually-hidden">Наши особенности</h2>
           <ul class="list section-qualities__list">
             <li class="section-qualities__item">
               <div class="section-qualities__img">
@@ -114,8 +174,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section-do section">
+      </section> -->
+    <!-- <section class="section-do section">
         <div class="container">
           <h2 class="title section-do__title">Чем мы занимаемся</h2>
           <ul class="list section-do__list">
@@ -133,8 +193,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section-team section">
+      </section> -->
+    <!-- <section class="section-team section">
         <div class="container">
           <h2 class="title section-team__title">Наша команда</h2>
           <ul class="list section-team__list">
@@ -338,9 +398,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
-    <footer class="footer" id="contacts">
+    <!-- <footer class="footer" id="contacts">
       <div class="container footer__container">
         <div class="footer__main">
           <a class="logo footer__logo" href="./index.html"
@@ -407,9 +467,9 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" type="button" data-modal-close>
           <svg class="modal__close-icon" width="11px" height="11px">
@@ -474,8 +534,9 @@
           <button class="call-back-form__btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
