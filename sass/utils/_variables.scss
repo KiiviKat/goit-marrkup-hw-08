@@ -1,0 +1,23 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --white-text-color: #ffffff;
+    --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+    --gray-icon-color: #afb1b8;
+
+    --accent-color: #2196f3;
+
+    --primary-background-color: #ffffff;
+    --gray-background-color: #f5f4fa;
+    --footer-background-color: #2f303a;
+    --footer-socials-background-color: rgba(255, 255, 255, 0.1);
+    --section-do-subtitle-background-color: rgba(47, 48, 58, 0.8);
+    --backdrop-color: rgba(0, 0, 0, 0.2);
+    --overlay-portfolio-background-color: rgba(33, 150, 243, 0.9);
+
+    --primary-font-family: 'Roboto', sans-serif;
+    --logo-font-family: 'Raleway', sans-serif;
+
+    --transition-time: 250ms;
+    --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
