@@ -1,16 +1,33 @@
 .section-clients {
     &__list {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+
+            @media (min-width: 1200px) {
+                margin-top: 50px;
+            }
         }
 
+&__item {
+        flex-basis: calc((100% - 30px) / 2);
+
+        @media (min-width: 768px) {
+                flex-basis: calc((100% - 60px) / 3);
+        }
+
+        @media (min-width: 1200px) {
+                flex-basis: calc((100% - 150px) / 6);
+        }
+}
+        
     &__link {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 170px;
+            width: 100%;
             height: 92px;
             border: 1px solid var(--gray-icon-color);
             border-radius: 4px;
