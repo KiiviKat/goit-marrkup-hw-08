@@ -109,6 +109,12 @@ ul {
 
 .img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .visually-hidden {
@@ -511,6 +517,7 @@ ul {
 }
 
 .section-do {
+  display: none;
   padding-top: 0;
 }
 .section-do__list {
@@ -541,6 +548,11 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .section-do {
+    display: block;
+  }
 }
 
 .section-team {
