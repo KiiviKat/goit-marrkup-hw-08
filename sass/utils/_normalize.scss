@@ -45,9 +45,13 @@ ul {
 }
 
 .title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
 
 .text {
