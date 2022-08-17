@@ -35,19 +35,44 @@
         }
 
     &__container {
+        text-align: center;
+
+        @media (min-width: 1200px) {
             display: flex;
             align-items: baseline;
+            text-align: start;
         }
+    
+        }
+
+    &__inner {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 165px;
+        }
+
+        @media (min-width: 1200px) {
+            gap: 70px;
+        }
+    }
 }
 
 
 .footer-socials {
-    margin-left: 70px;
+    margin-top: 60px;
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
 
     &__list {
             margin-top: 20px;
             display: flex;
             gap: 10px;
+
+            justify-content: center;
         }
 
     &__link {
@@ -75,16 +100,30 @@
 }
 
 .sign-up-form {
-    margin-left: auto;
+    margin-top: 60px;
+
+    @media (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: auto;
+    }
 
     &__box {
+
             display: flex;
-            gap: 12px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
             margin-top: 20px;
+
+            @media (min-width: 1200px) {
+                flex-direction: row;
+                gap: 12px;
+            }
         }
 
     &__input {
-            width: 358px;
+            max-width: 450px;
+            width: 100%;
             height: 50px;
             padding: 15px 16px;
             color: var(--white-text-color);
@@ -96,10 +135,14 @@
             &::placeholder {
                     color: rgba(255, 255, 255, 0.6);
             }
+
+            @media (min-width: 1200px) {
+                width: 358px;
+            }
         }
 
     &__btn {
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 28px;
