@@ -1,11 +1,8 @@
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    &__item:not(:nth-last-child(-n + 3)) {
-            margin-bottom: 30px;
-        }
+    justify-content: center;
+    gap: 30px;
 
     &__subtitle {
             margin-bottom: 4px;
@@ -30,7 +27,10 @@
         }
 
     &__link {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
             text-decoration: none;
             transition: box-shadow var(--transition-time) var(--transition-cubic);
 
@@ -44,12 +44,17 @@
     &__thumb {
             position: relative;
             overflow: hidden;
+
+            @media (min-width: 768px) and (max-width: 1200px) {
+                flex-grow: 1;
+            }
         }
 
     &__overlay {
             position: absolute;
             top: 0;
             left: 0;
+            padding: 63px 24px;
             width: 100%;
             height: 100%;
             display: flex;
@@ -57,7 +62,7 @@
             align-items: center;
             background-color: var(--overlay-portfolio-background-color);
     
-            transform: translateY(101%);
+            transform: translateY(120%);
             transition: transform var(--transition-time) var(--transition-cubic);
 
             .portfolio__link:hover &,
@@ -67,12 +72,20 @@
         }
 
     &__desc {
-            width: 322px;
-            height: 168px;
             font-size: 18px;
             line-height: 1.55;
             color: var(--white-text-color);
         }
+
+    &__item {
+        @media (min-width: 768px) and (max-width: 1200px) {
+            width: 354px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        justify-content: space-between;
+    }
 }
 
 

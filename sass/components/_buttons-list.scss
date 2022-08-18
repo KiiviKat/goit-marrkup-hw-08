@@ -1,11 +1,8 @@
 .buttons-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-
-    &__item:not(:last-child) {
-            margin-right: 8px;
-        }
+    gap: 8px;
+    margin-bottom: 40px;
 
     &__btn {
             border: none;
@@ -35,6 +32,21 @@
             color: var(--white-text-color);
             background-color: var(--accent-color);
         }
+
+    @media (max-width: 767px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 8px;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 
