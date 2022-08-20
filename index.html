@@ -220,20 +220,39 @@
           <h2 class="title section-team__title">Наша команда</h2>
           <ul class="list section-team__list">
             <li class="section-team__item">
-              <img
-                class="img"
-                srcset="
-                  ./images/team/team1@1x_sm.jpg 450w,
-                  ./images/team/team1@2x_sm.jpg 900w,
-                  ./images/team/team1@1x_md.jpg 354w,
-                  ./images/team/team1@2x_md.jpg 708w,
-                  ./images/team/team1@1x_lg.jpg 270w,
-                  ./images/team/team1@2x_lg.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
-                src="./images/team/team1@1x_sm.jpg"
-                alt="Фото дизайнера"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team1@1x_lg.webp 1x, ./images/team/team1@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team1@1x_lg.jpg 1x, ./images/team/team1@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team1@1x_md.webp 1x, ./images/team/team1@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team1@1x_md.jpg 1x, ./images/team/team1@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team1@1x_sm.webp 1x, ./images/team/team1@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team1@1x_sm.jpg 1x, ./images/team/team1@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="img" src="./images/team/team1@1x_sm.jpg" alt="Фото дизайнера" />
+              </picture>
               <div class="section-team__container">
                 <h3 class="subtitle section-team__subtitle">Игорь Демьяненко</h3>
                 <p class="text section-team__text">Product Designer</p>
@@ -270,20 +289,39 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img
-                class="img"
-                srcset="
-                  ./images/team/team2@1x_sm.jpg 450w,
-                  ./images/team/team2@2x_sm.jpg 900w,
-                  ./images/team/team2@1x_md.jpg 354w,
-                  ./images/team/team2@2x_md.jpg 708w,
-                  ./images/team/team2@1x_lg.jpg 270w,
-                  ./images/team/team2@2x_lg.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
-                src="./images/team/team2@1x_sm.jpg"
-                alt="Фото разработчика"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team2@1x_lg.webp 1x, ./images/team/team2@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team2@1x_lg.jpg 1x, ./images/team/team2@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team2@1x_md.webp 1x, ./images/team/team2@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team2@1x_md.jpg 1x, ./images/team/team2@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team2@1x_sm.webp 1x, ./images/team/team2@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team2@1x_sm.jpg 1x, ./images/team/team2@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="img" src="./images/team/team2@1x_sm.jpg" alt="Фото разработчика" />
+              </picture>
               <div class="section-team__container">
                 <h3 class="subtitle section-team__subtitle">Ольга Репина</h3>
                 <p class="text section-team__text">Frontend Developer</p>
@@ -320,20 +358,39 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img
-                class="img"
-                srcset="
-                  ./images/team/team3@1x_sm.jpg 450w,
-                  ./images/team/team3@2x_sm.jpg 900w,
-                  ./images/team/team3@1x_md.jpg 354w,
-                  ./images/team/team3@2x_md.jpg 708w,
-                  ./images/team/team3@1x_lg.jpg 270w,
-                  ./images/team/team3@2x_lg.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
-                src="./images/team/team3@1x_sm.jpg"
-                alt="Фото макреколога"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team3@1x_lg.webp 1x, ./images/team/team3@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team3@1x_lg.jpg 1x, ./images/team/team3@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team3@1x_md.webp 1x, ./images/team/team3@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team3@1x_md.jpg 1x, ./images/team/team3@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team3@1x_sm.webp 1x, ./images/team/team3@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team3@1x_sm.jpg 1x, ./images/team/team3@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="img" src="./images/team/team3@1x_sm.jpg" alt="Фото маркетолога" />
+              </picture>
               <div class="section-team__container">
                 <h3 class="subtitle section-team__subtitle">Николай Тарасов</h3>
                 <p class="text section-team__text">Marketing</p>
@@ -370,20 +427,39 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img
-                class="img"
-                srcset="
-                  ./images/team/team4@1x_sm.jpg 450w,
-                  ./images/team/team4@2x_sm.jpg 900w,
-                  ./images/team/team4@1x_md.jpg 354w,
-                  ./images/team/team4@2x_md.jpg 708w,
-                  ./images/team/team4@1x_lg.jpg 270w,
-                  ./images/team/team4@2x_lg.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
-                src="./images/team/team4@1x_sm.jpg"
-                alt="Фото дизайнера"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team4@1x_lg.webp 1x, ./images/team/team4@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team4@1x_lg.jpg 1x, ./images/team/team4@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team4@1x_md.webp 1x, ./images/team/team4@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team4@1x_md.jpg 1x, ./images/team/team4@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team4@1x_sm.webp 1x, ./images/team/team4@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team4@1x_sm.jpg 1x, ./images/team/team4@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="img" src="./images/team/team4@1x_sm.jpg" alt="Фото дизайнера" />
+              </picture>
               <div class="section-team__container">
                 <h3 class="subtitle section-team__subtitle">Михаил Ермаков</h3>
                 <p class="text section-team__text">UI Designer</p>
