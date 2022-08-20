@@ -797,6 +797,9 @@ ul {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .portfolio__link {
   display: -webkit-box;
@@ -821,13 +824,6 @@ ul {
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-  .portfolio__thumb {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
 }
 .portfolio__overlay {
   position: absolute;
@@ -858,6 +854,8 @@ ul {
           transform: translateY(0);
 }
 .portfolio__desc {
+  height: 100%;
+  overflow: auto;
   font-size: 18px;
   line-height: 1.55;
   color: var(--white-text-color);

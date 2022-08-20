@@ -24,6 +24,8 @@
             border-left: 1px solid #eeeeee;
             border-right: 1px solid #eeeeee;
             border-bottom: 1px solid #eeeeee;
+
+            flex-grow: 1;
         }
 
     &__link {
@@ -44,10 +46,6 @@
     &__thumb {
             position: relative;
             overflow: hidden;
-
-            @media (min-width: 768px) and (max-width: 1200px) {
-                flex-grow: 1;
-            }
         }
 
     &__overlay {
@@ -72,6 +70,8 @@
         }
 
     &__desc {
+        height: 100%;
+        overflow: auto;
             font-size: 18px;
             line-height: 1.55;
             color: var(--white-text-color);
