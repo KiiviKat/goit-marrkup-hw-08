@@ -12,6 +12,9 @@
     visibility: visible;
     transition: opacity var(--transition-time) var(--transition-cubic),
         visibility var(--transition-time) var(--transition-cubic);
+
+    overflow-y: scroll;
+
 }
 
 .backdrop.is-hidden {
@@ -35,6 +38,7 @@
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+
 
     &__close-btn {
             position: absolute;
@@ -76,6 +80,10 @@
 
 .form-field {
     margin-bottom: 10px;
+
+    &__comment {
+        margin-bottom: 20px;
+    }
 
     &__inner {
             position: relative;
@@ -131,7 +139,6 @@
     &__btn {
             display: block;
             padding: 0;
-            margin-top: 30px;
             margin-left: auto;
             margin-right: auto;
             width: 200px;
@@ -149,11 +156,12 @@
 }
 
 .agreement-field {
-    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .checkbox {
     &__check-icon {
+        flex-shrink: 0;
             display: none;
 
             .checkbox__input:checked~& {
@@ -162,6 +170,7 @@
         }
 
     &__border-icon {
+        flex-shrink: 0;
         .checkbox__input:checked+& {
                 display: none;
             }
@@ -171,7 +180,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             font-size: 12px;
             line-height: 1.71;
             letter-spacing: 0.03em;
@@ -179,7 +188,6 @@
 
             @media (min-width: 1200px) {
                 font-size: 14px;
-                gap: 8px;
             }
         }
 

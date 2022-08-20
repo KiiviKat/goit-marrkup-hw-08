@@ -1,14 +1,6 @@
 .section-team {
     background-color: var(--gray-background-color);
 
-    &__title {
-            margin-bottom: 30px;
-
-            @media (min-width: 1200px) {
-                margin-bottom: 50px;
-            }
-        }
-
     &__list {
         @media (min-width: 768px) {
             display: flex;
@@ -36,11 +28,11 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 1.19;
+            margin-bottom: 10px;
             text-align: center;
         }
 
     &__text {
-            margin-top: 10px;
             margin-bottom: 16px;
     
             line-height: 1.19;

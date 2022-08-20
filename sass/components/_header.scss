@@ -12,10 +12,12 @@
     &__container {
         display: flex;
         align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
 
-        @media (max-width: 768px) {
-
-            height: 60px;
+        @media (min-width: 768px) {
+            padding-top: 0;
+            padding-bottom: 0;
         }
 
         @media (max-width: 1200px) {
@@ -25,7 +27,6 @@
     }
 
     &__logo {
-
 
         @media (min-width: 1200px) {
             margin-right: 93px;
@@ -80,6 +81,13 @@
 
 
     color: var(--secondary-text-color);
+
+    &__item {
+        @media (min-width: 768px) and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    }
 
     &__link {
         display: flex;

@@ -29,6 +29,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 30px;
             height: 120px;
             border-radius: 4px;
             background-color: var(--gray-background-color);
@@ -36,7 +37,6 @@
 
     &__subtitle {
             margin-bottom: 10px;
-            margin-top: 30px;
     
             font-size: 14px;
             line-height: 1.14;
