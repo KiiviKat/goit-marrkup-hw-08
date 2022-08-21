@@ -179,6 +179,8 @@
         display: flex;
         flex-direction: column;
         padding: 48px 40px 48px 40px;
+        overflow: auto;
+        gap: 64px;
     }
 }
 
@@ -200,7 +202,6 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 64px;
 
     &__phone {
         font-size: 34px;

@@ -329,6 +329,8 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 48px 40px 48px 40px;
+  overflow: auto;
+  gap: 64px;
 }
 
 .mobile-nav {
@@ -358,7 +360,6 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
-  margin-bottom: 64px;
 }
 .mobile-contacts__phone {
   font-size: 34px;
@@ -1093,10 +1094,10 @@ ul {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   padding: 40px;
   max-width: 450px;
   width: 100%;
@@ -1136,6 +1137,13 @@ ul {
   margin-bottom: 12px;
   font-size: 20px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .modal {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 @media (min-width: 1200px) {
   .modal {
@@ -1255,7 +1263,7 @@ ul {
           align-items: center;
   gap: 8px;
   font-size: 12px;
-  line-height: 1.71;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
