@@ -8,14 +8,14 @@
         }
 
     &__item {
-            width: 100%;
+            flex-basis: 100%;
 
             @media (min-width: 768px) {
-                width: 354px;
+                flex-basis: calc((100% - 30px) / 2);
             }
 
             @media (min-width: 1200px) {
-                width: 270px;
+                flex-basis: calc((100% - 90px) / 4);
             }
         }
 
